@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Registro</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,11 +21,23 @@
       <option value="segundo">segundo</option>
       <option value="tercero">tercero</option>
     </select>
-    <button type="button" id="registrar" onclick="btnRegistrar">Enviar</button>
+    <button type="button" id="registrar" >Enviar</button>
   </form>
 
-  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
-  <script src="call-firebase.js"></script>
+  
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD0R10rhCESqMvr6WvnteQeL2XF-6aDNHc",
+    authDomain: "registro-1f31b.firebaseapp.com",
+    databaseURL: "https://registro-1f31b.firebaseio.com",
+    projectId: "registro-1f31b",
+    storageBucket: "registro-1f31b.appspot.com",
+    messagingSenderId: "622021179466"
+  };
+  firebase.initializeApp(config);
+</script>
   <script src="main.js"></script>
 </body>
 
