@@ -5,16 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Registro</title>
 </head>
 
 <body>
   <h1>HELLO GIRDS</h1>
-  <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo"> 
-  <input type="number" name="DNI" id="dni" placeholder="Numero de identidad">
-  <input type="email" name="email" id="email" placeholder="Correo electronico">
-  <button type="submit" id="registrar">Enviar</button>
-
+  <form>
+    <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo">
+    <input type="number" name="DNI" id="dni" placeholder="Numero de identidad">
+    <input type="email" name="email" id="email" placeholder="Correo electronico">
+    <select name="persona" id="persona">
+      <option value="seleccion">¿A Quien Buscas?</option>
+      <option value="primero">primero</option>
+      <option value="segundo">segundo</option>
+      <option value="tercero">tercero</option>
+    </select>
+    <button type="button" id="registrar" onclick="btnRegistrar">Enviar</button>
+  </form>
 
   <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
   <script src="call-firebase.js"></script>
