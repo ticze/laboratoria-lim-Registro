@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-admin.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <title>Registro de Visitante</title>
+</head>
+
+<body>
+  <header>
+    <img src="../img/visitas-logo.png" alt="">
+    <button id="btn-inicio-header" type="button" class="btn btn-outline-warning" action="interfaz-uno.html">Inicio</button>
+  </header>
+  <section id="form-admin">
+    <h2>INICIAR SESION ADMINISTRADOR</h2>
+    <form id="formulario-visitante">
+      <div class="form-row1">
+        <div class="col-9">
+          <label for="name">ID de Administrador</label>
+          <input type="text" class="form-control" placeholder="Ingresar id">
+        </div>
+        <div class="col-9">
+          <label for="number">Password</label>
+          <input type="password" class="form-control" placeholder="Ingresar Password">
+        </div>
+        <button type="button" class="btn btn-warning">Iniciar Sesion</button>
+        <p>Aún no tiene cuenta? </p>
+          <a id="btn-crear">Creala aquí</a>
+      </div>
+    </form>
+  </section>
+  <script src="admin.js"></script>
+</body>
+
+</html>

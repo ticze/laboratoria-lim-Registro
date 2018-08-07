@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+img{
+    width: 100px;
+    height: 100px;
+    padding-left: 8px;
+}
+
+.btn-outline-warning{
+    float: right;
+    margin: 28px;
+}
+
+#contenido-principal{
+    width: 100%;
+    height: auto;
+}
+
+#photos{
+    width: 55%;
+    float: left;
+}
+h2{
+     text-align: center;
+}
+
+#formulario-visitante{
+    width: 45%;
+    height: 100%;
+    float: left;
+   
+} 
+
+.btn-warning{
+    margin: 8px;
+}
