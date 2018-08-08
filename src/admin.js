@@ -19,6 +19,7 @@ btnIniciarSesion.addEventListener('click', e => {
   btnVisitanteHeader.style.display = "none";
   logInAdmin.style.display = "none";
   tableDataVisitor.style.display = "block";
+  mostrarDataVisitor();
 })
 
 btnCerrar.addEventListener('click', e => {
@@ -36,14 +37,29 @@ btnIniciarSignUp.addEventListener('click', e => {
   logInAdmin.style.display = "none";
   tableDataVisitor.style.display = "block";
   sigUpAdmin.style.display = "none";
+  mostrarDataVisitor();
 })
 
 const mostrarDataVisitor = () => {
-  let data = firebase.database();
-  tableMostrarData.innerHTML += `
-    <tr>
-        <td><"${data.name}"></td>
-    </tr>
-    `;
+  let ref = firebase.database().ref('/visitante');
+  ref.once('value', (data) => {
+    data.forEach(visitante => {
+      let visitor = visitante.key,
+      visitanteDatos = visitante.val();
+
+      console.log(visitor);
+      // tableMostrarData = "";
+      tableMostrarData.innerHTML += `
+      <tr data-key="${visitor}">
+          <td>${visitanteDatos.name}</td>
+          <td>${visitanteDatos.dni}</td>
+          <td>${visitanteDatos.celular}</td>
+          <td>${visitanteDatos.persona_a_visitar}</td>
+          <td>${visitanteDatos.fecha_de_visita}</td>
+      </tr>
+      `;
+      
+    });
+  })
 }
-  
+
