@@ -1,8 +1,8 @@
 h2{
-    padding: 12px;
+    padding: 15px;
 
 }
-#table-mostrar-tabla{
+#table-data-visitor{
     display: none;
     width: 80%;
     padding-left: 50px;
@@ -12,4 +12,16 @@ h2{
 
 #btn-cerrar-admin-header{
     display: none;
+}
+
+#log-in-admin{
+    width: 45%;
+    height: 100%;
+    float: left;
+}
+#sig-up-admin{
+    display: none;
+    width: 45%;
+    height: 100%;
+    float: left;
 }

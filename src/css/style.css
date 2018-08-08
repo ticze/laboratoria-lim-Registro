@@ -19,30 +19,26 @@ img{
     margin: 28px;
 }
 
-#contenido-principal{
-    width: 100%;
-    height: auto;
-}
-
-#photos{
-    width: 55%;
-    float: left;
-}
 h2{
      text-align: center;
 }
 
-#formulario-visitante{
-    width: 45%;
-    height: 100%;
-    float: left;
-   
-} 
-
+/* .takefotoWeb{
+    display: none;
+}
+@media  screen and (min-width: 769px){
+    .takefotoWeb{
+        display: block;
+    }
+} */
 .btn-warning{
     margin: 8px;
 }
 
 #section-elegir{
     display: none;
+}
+
+.carousel-item img{
+    min-height: 300px;
 }
