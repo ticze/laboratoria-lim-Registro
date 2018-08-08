@@ -11,19 +11,25 @@ es brindarle un sistema de registro digital de visitantes.
 
 ## Objetivos
 
-El principal objetivo que cubre este proyecto es mejorar el sistema de registro de visitantes de los coworking del país, mejorando que 
-la funcionalidad del sistema sea con un registro sencillo y rápido, y la notificación de la visita sea inmediata.
+1. El principal objetivo que cubre este proyecto es mejorar el sistema de registro de visitantes de los coworking del país, mejorando que la funcionalidad del sistema sea con un registro sencillo y rápido.
+
+2. Brindar al visitante la información inmediata de ser recibido por la persona a quién busca.
+
+3. Brindar a la persona visitada la información inmediata de la persona que lo busca para que pueda atenderlo.
+
+4. Digitalizar las empresas coworking haciendo un uso eficiente de la tecnología.
 
 
 ## Usuarios
 
-Los principales usuarios del proyecto son los administradores de los coworking y las empresas que trabajen con ésta.
+Los principales usuarios del proyecto son los grandes edificios donde funcionan muchas empresas y encuentran la solución en que sea la administración quien comunique sus visitas.
+
+Por lo tanto identificamos a 3 personas a quiénes sirve este aplicativo los administradores de la empresa coworking, los visitantes y las personas visitadas.
 
 
 ## Implementación
 
-Requisito para este proyecto es tener una colaboradora que trabaje la parte UX y dos colaboradoras que trabajen la parte front-end que abarquen 
-sobretodo parte de las principales funcionalidades que son necesarias para este proyecto.
+Requisito para este proyecto es tener una colaboradora que trabaje la parte UX y dos colaboradoras que trabajen la parte front-end que abarquen sobretodo parte de las principales funcionalidades que son necesarias para este proyecto.
 
 ### Desarrollo UX
 
@@ -53,10 +59,18 @@ Con base a solucionar las principales necesidades del coworking se procedió a e
 nuestro proyecto con las personas que lo implementarian.
 
 
-### 3) Prototipo de alta fidelidad
+### 4) Prototipo de alta fidelidad
 
 Con las correcciones de las sugerencias de nuestro prototipo de baja fidelidad se procedió a implementar todos los cambios a nuestro 
 prototipo de alta fidelidad, siendo éste mostrado a través de Figma como herramienta de desarrollo.
+
+En la interfaz mostramos el desenvolvimiento de los visitantes y administradores con el aplicativo.
+
+[Prototipo en Figma](https://www.figma.com/proto/YrgBTs940tHYOolfBs2Hbzds/WE-WORK?node-id=22%3A65&scaling=scale-down)
+
+![prototipo1](img/prototipo1.jpg)
+![prototipo2](img/prototipo2.jpg)
+![prototipo3](img/prototipo3.jpg)
 
 
 ### Desarrollo Front-end
@@ -68,5 +82,5 @@ Para poder manipular la data que se creará cuando las personas se registren en 
 
 ### 2) Elaborar el esqueleto en HTML
 
-Como ya se cuenta con el prototipo de alta fidelidad se plasma la misma estructura en HTML usando varios <div> que separen nuestra 
+Como ya se cuenta con el prototipo de alta fidelidad se plasma la misma estructura en HTML usando varios < div > que separen nuestra 
 estructura.
