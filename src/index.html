@@ -15,7 +15,7 @@
 <body>
   <header>
     <img src="../img/visitas-logo.png" alt="">
-    <button id="btn-header" type="button" class="btn btn-outline-warning" action="admin.html">Administrador</button>
+    <button id="btn-admin-header" type="button" class="btn btn-outline-warning" action="admin.html">Administrador</button>
   </header>
   <!-- CONTENIDO PRINCIPAL -->
   <main id="contenido-principal">
@@ -46,26 +46,34 @@
     <h2>Registro de Visitas</h2>
     <form id="formulario-visitante">
       <div class="form-row1">
-        <div class="col-7">
+        <div class="col-9">
           <label for="name">Nombres Completos</label>
           <input type="text" class="form-control" placeholder="Ingresar nombres completos" id="name">
         </div>
-        <div class="col-7">
+        <div class="col-9">
           <label for="number">Documento de Identidad</label>
           <input type="number" class="form-control" placeholder="Ingresar Dni" id="dni">
         </div>
-        <div class="col-7">
+        <div class="col-9">
           <label for="number">N° de Celular</label>
           <input type="numer" class="form-control" placeholder="Ingresar telephone" id="phone">
         </div>
-        <button id="btn-ingresar" type="button" class="btn btn-warning" >Ingresar</button>
-      </div>
+        <div class="input-group col-9">
+          <label for="text">A quién visitas?</label>
+          <select class="custom-select" id="select-persona-visita" >
+            <option selected>Selecciona</option>
+            <option value="1">Primera</option>
+            <option value="2">Segunda</option>
+            <option value="3">Tercera</option>
+          </select>
+        </div>
+        <button id="btn-ingresar" type="button" class="btn btn-warning">Ingresar</button>
     </form>
   </main>
   <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
   <script src="call-firebase.js"></script>
-  <script src="main.js"></script>
-  <script src="interfaz-uno.js"></script>
+  <!-- <script src="main.js"></script> -->
+  <script src="index.js"></script>
 </body>
 
 </html>

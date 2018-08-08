@@ -15,26 +15,44 @@
 <body>
   <header>
     <img src="../img/visitas-logo.png" alt="">
-    <button id="btn-inicio-header" type="button" class="btn btn-outline-warning" action="interfaz-uno.html">Inicio</button>
+    <button id="btn-visitante-header" type="button" class="btn btn-outline-warning" action="index.html">Visitante</button>
+    <button id="btn-cerrar-admin-header" type="button" class="btn btn-outline-warning" action="index.html">Cerrar</button>
   </header>
   <section id="form-admin">
-    <h2>INICIAR SESION ADMINISTRADOR</h2>
-    <form id="formulario-visitante">
-      <div class="form-row1">
-        <div class="col-9">
-          <label for="name">ID de Administrador</label>
-          <input type="text" class="form-control" placeholder="Ingresar id">
-        </div>
-        <div class="col-9">
-          <label for="number">Password</label>
-          <input type="password" class="form-control" placeholder="Ingresar Password">
-        </div>
-        <button type="button" class="btn btn-warning">Iniciar Sesion</button>
-        <p>Aún no tiene cuenta? </p>
+    <h1>INICIAR SESION ADMINISTRADOR</h2>
+      <form id="formulario-visitante">
+        <div class="form-row1">
+          <div class="col-9">
+            <label for="name">ID de Administrador</label>
+            <input type="text" class="form-control" placeholder="Ingresar id">
+          </div>
+          <div class="col-9">
+            <label for="number">Password</label>
+            <input type="password" class="form-control" placeholder="Ingresar Password">
+          </div>
+          <button type="button" class="btn btn-warning" id="iniciar-sesion">Iniciar Sesion</button>
+          <p>Aún no tiene cuenta? </p>
           <a id="btn-crear">Creala aquí</a>
-      </div>
-    </form>
+        </div>
+      </form>
   </section>
+  <section id="table-mostrar-tabla">
+    <table class="table">
+      <h2>BASE DE DATOS DE VISITANTES</h1>
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">NOMBRES Y APELLIDOS</th>
+            <th scope="col">DNI</th>
+            <th scope="col">CORREO</th>
+            <th scope="col">PERSONA A QUIEN VISITÓ</th>
+            <th scope="col">HORA DE VISITA</th>
+          </tr>
+        </thead>
+        <tbody id="table-data-visitor">    
+    </tbody>
+  </table>
+  </section>
+
   <script src="admin.js"></script>
 </body>
 

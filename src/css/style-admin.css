@@ -1,6 +1,15 @@
-#formulario-visitante{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+h2{
+    padding: 12px;
+
+}
+#table-mostrar-tabla{
+    display: none;
+    width: 80%;
+    padding-left: 50px;
+    display: none;
+
+}
+
+#btn-cerrar-admin-header{
+    display: none;
 }
