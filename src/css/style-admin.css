@@ -1,6 +1,27 @@
-#formulario-visitante{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+h2{
+    padding: 15px;
+
+}
+#table-data-visitor{
+    display: none;
+    width: 80%;
+    padding-left: 50px;
+    display: none;
+
+}
+
+#btn-cerrar-admin-header{
+    display: none;
+}
+
+#log-in-admin{
+    width: 45%;
+    height: 100%;
+    float: left;
+}
+#sig-up-admin{
+    display: none;
+    width: 45%;
+    height: 100%;
+    float: left;
 }
