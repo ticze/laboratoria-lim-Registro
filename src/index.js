@@ -1,4 +1,3 @@
-
 // BOTONES
 const btnAdminHeader = document.getElementById("btn-admin-header");
 const btnIngresar = document.getElementById("btn-ingresar");
@@ -12,6 +11,7 @@ btnIngresar.addEventListener('click', () => {
   const selectPersonaVisita = document.getElementById('select-persona-visita').value;
   var fec = new Date().toLocaleString();
 
+  // CREANDO DATA DE VISITANTE PARA GUARDAR EN FIREBASE
   const dataVisitante = firebase.database().ref().child('visitante');
   dataVisitante.push({
     name: name,
@@ -20,6 +20,7 @@ btnIngresar.addEventListener('click', () => {
     persona_a_visitar: selectPersonaVisita,
     fecha_de_visita: fec,
   })
+
 })
 
 btnAdminHeader.addEventListener('click', e => {
@@ -29,6 +30,7 @@ btnAdminHeader.addEventListener('click', e => {
 $('#carouselExampleControls').carousel({
   interval: 2000
 });
+
 
 
 
